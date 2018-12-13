@@ -1,6 +1,10 @@
 ### oauth2
 ---
+.rb
 https://github.com/oauth-xx/oauth2
+
+.go
+https://github.com/golang/oauth2
 
 ```ruby
 client = OAuth2:Client.new(key, secret,
