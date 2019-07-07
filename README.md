@@ -64,3 +64,21 @@ spec.add_dependency 'oauth2', '~> 1.4'
 ```
 
 
+```go
+func RegisterBrokenAuthHeaderProvider(tokenURL string)
+
+type AuthCodeOption interface {
+}
+
+
+var (
+  AccessTypeOnline AuthCodeOption = SetAuthURLParam("access_type", "online")
+  AccessTypeOffline AuthCodeOption = SetAuthURLParam("access_type", "offline")
+)
+
+func SetAuthURLParam(key, value string) AuthCodeOption
+
+```
+
+
+
